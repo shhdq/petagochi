@@ -1,0 +1,123 @@
+:root {
+  --width: 300px;
+  --x-speed: 50s;
+  --y-speed: 30s;
+  --transition-speed: 2.2s;
+}
+
+.blob {
+  width: var(--width);
+  height: var(--width);
+  background: #90a4ae;
+  transition: border-radius var(--transition-speed) linear;
+  box-shadow: 20px 20px 15px #4b636d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e5e6;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px #73838b;
+}
+.eyeball {
+  width: 40%;
+  height: 40%;
+  background-color: rgb(39, 38, 38);
+  border-radius: 50px;
+}
+.name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-left: 2vw;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dot1 {
+    border-radius: 50px;
+    width: 20px;
+    height:20px;
+    background-color: yellow;
+}
+/* .blob-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.blob-2 .blob {
+  background: #b0bec5;
+} */
+
+body {
+    width: 100vw;
+    height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: #546e7a;
+}
+
+.x {
+  animation: x var(--x-speed) linear infinite alternate;
+}
+.x2 {
+  animation: x2 var(--x-speed) linear infinite alternate;
+}
+.y {
+  animation: y var(--y-speed) linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - var(--width)));
+  }
+}
+@keyframes x2 {
+  100% {
+    transform: translateX(calc(-100vw + var(--width)));
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - var(--width)));
+  }
+}
+/* skdksadkolk */
+.e {
+  animation: e var(--x-speed) linear infinite alternate;
+}
+.x2 {
+  animation: x2 var(--x-speed) linear infinite alternate;
+}
+.y {
+  animation: y var(--y-speed) linear infinite alternate;
+}
+
+@keyframes e {
+  100% {
+    transform: translateX(calc(100vw + var(--width));
+  }
+}
+@keyframes x2 {
+  100% {
+    transform: translateX(calc(-100vw + var(--width)));
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - var(--width)));
+  }
+}
